@@ -2,13 +2,43 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>My first three.js app</title>
+		<title>CITY DRIVE</title>
 		<style>
 			body { margin: 0; }
+			/* start button */
+            #startButton {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 20px 40px;
+                font-size: 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            #startButton:hover {
+                background-color: #07a00e;
+			}
+			/* camera view */
+			#info {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				font-size: 20px;
+				font-weight: 500;
+				color: white;
+				display: none;
+			}
 		</style>
 	</head>
 	<body>
 		<script type="module" src="/main.js"></script>
+		<button id="startButton">START</button>
+		<span id="info">Use Space to Control Camera with Mouse Movement!</span>
 
 	</body>
 </html>
